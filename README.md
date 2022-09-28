@@ -16,3 +16,4 @@ Calculadora de tempo e dinheiro. 💸
 
 Primeiro passo : 
 1. Conseguir fazer o usuário navegar com facilidade  entre as partes para escolher um só serviço.
+![desapontado](https://gifs.joelglovier.com/high-five/avengers-high-five.gif)
