@@ -1,10 +1,75 @@
 @font-face {
     font-family: 'Bebas', cursive;
-    src: url(../asets/fonts/BebasNeue-Regular.ttf) format(otf) ;
+    src: url(../asets/fonts/BebasNeue-Regular.otf) format(otf) ;
 }
 
+:root{
 
-h1{
-    font-family: 'Bebas',cursive;
+    font-size: 62.5%; 
+
+ /* ------ Cor -------*/
+
+ --background-primary: #1E1E1E;
+ --title-color: #FFFFFF;
+ --butons-color: #DB880C;
+ --window-color: #F1F1F1;
+ 
+}
+
+body{
+background-color: var(--background-primary);
+}
+main{
+    width: 79rem;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 8rem;
+}
+main article{
+    color: var(--title-color);
     
+}
+article h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 9.6rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+p, nav {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+main article section p{
+    font-size: 3.6rem;
+    font-weight: 400;
+    padding-top: 3rem;
+    text-align: center;
+    padding: 0rem 0rem 11.3rem 
+}
+
+main nav{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+}
+main nav button{
+    background-color: var(--butons-color);
+    width: 20.7rem;
+    height: 5.7rem;
+    border-radius: 2rem;
+    border-style: none;
+    cursor: pointer;
+}
+nav button:hover{
+    background-color: #ebebeb;
+    transition: 1300ms;
+    box-shadow: 0 0 5px #ffffff,
+              0 0 25px #f1dfad,
+              0 0 50px #f5e58a,
+              0 0 80px #ffffff;
+}
+nav button a{
+    color: var(--background-primary);
+    font-size: 2.8rem;
 }
