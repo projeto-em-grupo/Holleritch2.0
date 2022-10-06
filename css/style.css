@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Bebas', cursive;
+    src: url(../asets/fonts/BebasNeue-Regular.ttf) format(otf) ;
+}
+
+
+h1{
+    font-family: 'Bebas',cursive;
+    
+}
