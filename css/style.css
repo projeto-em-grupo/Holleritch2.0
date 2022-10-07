@@ -25,7 +25,6 @@ main{
     box-sizing: border-box;
     margin-top: 7.4rem;
 
-    background-color: red;
 }
 main article{
     color: var(--title-color);
@@ -46,7 +45,6 @@ article h1{
     margin: auto;
     margin-bottom: 2.4rem;
 
-    background-color: blue;
 }
 
 p, nav {
@@ -67,7 +65,6 @@ main article section p{
     padding: 2.3rem ;
     margin-bottom: 5.6rem;
 
-    background-color: #1E1E1E;
 }
 
 main nav{
