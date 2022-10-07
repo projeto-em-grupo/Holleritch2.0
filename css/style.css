@@ -20,10 +20,12 @@ body{
 background-color: var(--background-primary);
 }
 main{
-    width: 79rem;
+    width: 86.8rem;
     margin: auto;
     box-sizing: border-box;
-    padding-top: 8rem;
+    margin-top: 7.4rem;
+
+    background-color: red;
 }
 main article{
     color: var(--title-color);
@@ -31,9 +33,20 @@ main article{
 }
 article h1{
     font-family:'Courier New', Courier, monospace;
-    font-size: 9.6rem;
+    font-size: 10rem;
     text-align: center;
-    padding-bottom: 3rem;
+    
+
+    /* Devido ao tamanho da letra que está incompatível com as medidas do figma, o ligne heigt e o tamanho da letra estão incorretos , assim como a fonte*/
+    
+    width: 86.8rem;
+    height: 14.2rem;
+
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 2.4rem;
+
+    background-color: blue;
 }
 
 p, nav {
@@ -41,16 +54,25 @@ p, nav {
 } 
 
 main article section p{
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     font-weight: 400;
-    padding-top: 3rem;
     text-align: center;
-    padding: 0rem 0rem 11.3rem 
+    
+    /* Devido ao tamanho da letra que está incompatível com as medidas do figma, o tamanho da letra estão incorretos , assim como a fonte e o padding*/
+
+    width: 77rem;
+    height: 15.2rem;
+    margin: auto;
+    padding-top: 3rem;
+    padding: 2.3rem ;
+    margin-bottom: 5.6rem;
+
+    background-color: #1E1E1E;
 }
 
 main nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-weight: 400;
 }
 main nav button{
@@ -71,5 +93,5 @@ nav button:hover{
 }
 nav button a{
     color: var(--background-primary);
-    font-size: 2.8rem;
-}
+    font-size: 1.8rem;
+    font-weight: 800;}
