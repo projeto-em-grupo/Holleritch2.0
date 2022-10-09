@@ -93,15 +93,22 @@ main nav{
     justify-content: space-around;
     font-weight: 400;
 }
-main nav button{
+nav a{
+    color: var(--background-primary);
     background-color: var(--butons-color);
     width: var(--button-size-w);
     height: var(--button-size-h);
     border-radius: var(--button-border-r);
-    border-style: none;
-    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    
+/* nessesaria correção na fonte e no tamanho */
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding-top: 17px;
 }
-nav button:hover{
+
+nav a:hover{
     background-color: #ebebeb;
     transition: 1300ms;
     box-shadow: 0 0 5px #ffffff,
@@ -111,8 +118,3 @@ nav button:hover{
 }
     /* observar se realmente foi uma mudança benefica */
 
-nav button a{
-    color: var(--background-primary);
-    font-size: 1.8rem;
-    font-weight: 800;}
-    /* nessesaria correção na fonte e no tamanho */
