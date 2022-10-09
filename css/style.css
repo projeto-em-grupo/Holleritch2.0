@@ -1,29 +1,50 @@
-@font-face {
-    font-family: 'Bebas', cursive;
-    src: url(../asets/fonts/BebasNeue-Regular.otf) format(otf) ;
-}
-
 :root{
 
     font-size: 62.5%; 
 
- /* ------ Cor -------*/
+ /* ------ Color -------*/
 
  --background-primary: #1E1E1E;
  --title-color: #FFFFFF;
  --butons-color: #DB880C;
  --window-color: #F1F1F1;
  
+
+/* -------- size --------- */
+
+--button-size-w : 20.7rem;
+--button-size-h : 5.7rem; 
+--main-w: 86.8rem;
+--h1-w: 86.8rem;
+--h1-h: 14.2rem;
+--pw: 77rem;
+--ph: 15.2rem;
+
+/*  --------- margin --------- */
+
+--main-mtop: 7.4rem;
+--h1-mb: 2.4rem;
+
+/* --------border size ------- */
+--button-border-r: 2rem;
+
+
 }
+
+@font-face {
+    font-family: 'Bebas', cursive;
+    src: url(../asets/fonts/BebasNeue-Regular.otf) format(otf) ;
+}
+
 
 body{
 background-color: var(--background-primary);
 }
 main{
-    width: 86.8rem;
+    width: var(--main-w);
+    margin-top: var(--main-mtop);
     margin: auto;
     box-sizing: border-box;
-    margin-top: 7.4rem;
 
 }
 main article{
@@ -31,19 +52,19 @@ main article{
     
 }
 article h1{
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Bebas', cursive;
     font-size: 10rem;
     text-align: center;
     
 
     /* Devido ao tamanho da letra que está incompatível com as medidas do figma, o ligne heigt e o tamanho da letra estão incorretos , assim como a fonte*/
     
-    width: 86.8rem;
-    height: 14.2rem;
+    width: var(--h1-w);
+    height: var(--h1-h);
 
-    box-sizing: border-box;
+    margin-bottom: var(--h1-mb);
     margin: auto;
-    margin-bottom: 2.4rem;
+    box-sizing: border-box;
 
 }
 
@@ -58,8 +79,8 @@ main article section p{
     
     /* Devido ao tamanho da letra que está incompatível com as medidas do figma, o tamanho da letra estão incorretos , assim como a fonte e o padding*/
 
-    width: 77rem;
-    height: 15.2rem;
+    width: var(--pw);
+    height: var(--ph);
     margin: auto;
     padding-top: 3rem;
     padding: 2.3rem ;
@@ -74,9 +95,9 @@ main nav{
 }
 main nav button{
     background-color: var(--butons-color);
-    width: 20.7rem;
-    height: 5.7rem;
-    border-radius: 2rem;
+    width: var(--button-size-w);
+    height: var(--button-size-h);
+    border-radius: var(--button-border-r);
     border-style: none;
     cursor: pointer;
 }
@@ -88,7 +109,10 @@ nav button:hover{
               0 0 50px #f5e58a,
               0 0 80px #ffffff;
 }
+    /* observar se realmente foi uma mudança benefica */
+
 nav button a{
     color: var(--background-primary);
     font-size: 1.8rem;
     font-weight: 800;}
+    /* nessesaria correção na fonte e no tamanho */
