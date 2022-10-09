@@ -10,25 +10,26 @@
  --window-color: #F1F1F1;
 
  /* ---- width ------ */
+--aside-2w: 51rem;
 
  --main-w: 102.4rem;
  --main-h: 60.4rem;
- --h1-h: 9.3rem
-
- --p-h: 3rem;
+ --h1-h: 9.3rem;
+ --p-height: 3rem;
 
  --input-textnumber-w: 32.2rem;
  --input-textnumber-h: 4.6rem;
  --input-textnumber-r: 5rem;
 
- --input-radio-h: 2.6rem;
- --imput-radio-r: 2.6rem;
+ --input-radio-h: 2.5rem;
+ --imput-radio-w: 2.5rem;
 
  --checkbox-h: 2rem;
  --checkbox-w: 2rem;
 
- --a-w: 14.6rem;
- --a-h: 15.0rem;
+ --a-w: 1.4rem;
+ --a-h: 4rem;
+ --a-br: 5rem;
 
  /* ---- margin ---- */
  --h1-mtop: 5.7rem;
@@ -48,12 +49,18 @@ body{
 
 main{
     width: var(--main-w);
-    height: var(--main-h);
+    height: 50rem;
     background-color: red;
 }
-header h1{
+main h1{
     height: var(--h1-h);
+    padding-top: var(--h1-mtop);
     background-color: blue;
+    box-sizing: border-box;
+}
+main header {
+    width: var(--aside-2w);
+    display: inline-block;
 }
 main header input[type=number]{
     width: var(--input-textnumber-w);
@@ -66,4 +73,33 @@ main header input[type=text]{
     height: var(--input-textnumber-h);
     border-radius: var(--input-textnumber-r);
     border-style: none;
+}
+main header form p {
+    height: 3rem;
+    background-color: green;
+}
+main header form input[type=radio]{
+    height: var(--input-radio-h);
+    width: var(--imput-radio-w);
+} 
+input[type=checkbox]{
+    height: var(--checkbox-h);
+    width: var(--checkbox-w);
+    background-color: aqua;
+}
+main aside {
+    width: var(--aside-2w);
+    float: right;
+}
+main aside div {
+    background-color: green;
+    
+}
+main aside div a{
+    box-sizing: border-box;
+    background-color: var(--butons-color);
+    padding: var(--a-w) var(--a-h);
+    border-radius: var(--a-br);
+    border: 1px solid black;
+    
 }
