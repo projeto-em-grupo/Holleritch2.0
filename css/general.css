@@ -55,3 +55,15 @@ header h1{
     height: var(--h1-h);
     background-color: blue;
 }
+main header input[type=number]{
+    width: var(--input-textnumber-w);
+    height: var(--input-textnumber-h);
+    border-radius: var(--input-textnumber-r);
+    border-style: none;
+}
+main header input[type=text]{
+    width: var(--input-textnumber-w);
+    height: var(--input-textnumber-h);
+    border-radius: var(--input-textnumber-r);
+    border-style: none;
+}
