@@ -14,7 +14,9 @@
 
 --button-size-w : 20.7rem;
 --button-size-h : 5.7rem; 
---main-w: 86.8rem;
+--main-w: 102.4;
+
+--article-w: 86.8rem;
 --h1-w: 86.8rem;
 --h1-h: 14.2rem;
 --pw: 77rem;
@@ -24,6 +26,8 @@
 
 --main-mtop: 7.4rem;
 --h1-mb: 2.4rem;
+--p-mtop: 3rem;
+--p-mb: 5.6rem;
 
 /* --------border size ------- */
 --button-border-r: 2rem;
@@ -42,20 +46,24 @@ background-color: var(--background-primary);
 }
 main{
     width: var(--main-w);
-    margin-top: var(--main-mtop);
     margin: auto;
+    margin-top: var(--main-mtop);
     box-sizing: border-box;
+   
 
 }
 main article{
     color: var(--title-color);
+    width: var(--article-w);
+    margin: auto;
+   
     
 }
 article h1{
     font-family:'Bebas', cursive;
     font-size: 10rem;
     text-align: center;
-    
+   
 
     /* Devido ao tamanho da letra que está incompatível com as medidas do figma, o ligne heigt e o tamanho da letra estão incorretos , assim como a fonte*/
     
@@ -77,14 +85,15 @@ main article section p{
     font-weight: 400;
     text-align: center;
     
+    
     /* Devido ao tamanho da letra que está incompatível com as medidas do figma, o tamanho da letra estão incorretos , assim como a fonte e o padding*/
 
     width: var(--pw);
     height: var(--ph);
     margin: auto;
-    padding-top: 3rem;
+    margin-top: var(--p-mtop);
+    margin-bottom: var(--p-mb);
     padding: 2.3rem ;
-    margin-bottom: 5.6rem;
 
 }
 
@@ -107,6 +116,7 @@ nav a{
     font-weight: 800;
     padding-top: 17px;
 }
+
 
 nav a:hover{
     background-color: #ebebeb;
