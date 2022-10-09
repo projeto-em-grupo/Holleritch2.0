@@ -4,49 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/general.css">
     <title>Dinheiro em horas</title>
 </head>
 <body>
-    <header>
-        <h1>Quanto vale a sua  hora</h1>
-        <form action="">
-            <p>Qual é o seu salário?</p>
-            <input type="number" min="1" placeholder="R$ 1.212">
-            <p>Sua jornada de trabalho é de </p>
-            <input type="number" value="8" placeholder="">  <br>
-            <input type="checkbox" id="segunda">
-            <label for="segunda">Segunda feira</label>
-            <input type="checkbox" id="terça">
-            <label for="terça">Terça feira</label>
-            <input type="checkbox">
-            <label for="quarta">Quarta feira</label>
-            <input type="checkbox">
-            <label for="quinta">Quinta feira</label>
-            <input type="checkbox">
-            <label for="sexta">Sexta feira</label>
-            <input type="checkbox">
-            <label for="Sabado">Sabado</label>
-            <input type="checkbox">
-            <label for="domingo">Domingo</label>
-            <input type="submit" value="Quanto vale">
-        </form>
-
-         <!-- Modo avançado de calculadora -->
-        <button> <a href="./modoavançado.html"> Modo avançado</a></button>
-    </header>
-
-    <!-- Segunda parte, carregamento após o submit -->
-
-    <aside>
-        <section>
-            <h2>Sua hora de trabalho vale</h2>
-            <div> R$ xxx</div>
-            <p>Por suas xxx horas trabalhadas em x dias da semana</p>
-        </section>
-        <div>
-        <button> <a href="./orçamento.html"> Orçamento </a></button> 
-        <button> <a href="./quantotempo.html"> Quanto Tempo </a></button>
-        </div>
-    </aside>
-</body>
-</html>
+    <main>
+        <header>
+            <h1>Quanto vale a sua  hora</h1>
+            <form action="">
+                <p>Qual é o seu salário?</p>
+                <input type="number" min="1" placeholder="R$ 1.212">
+                <p>Sua jornada de trabalho é de </p>
+                <input type="number" value="8" placeholder="">  <br>
+                <input type="checkbox" id="segunda">
+                <label for="segunda">Segunda feira</label>
+                <input type="checkbox" id="terça">
+                <label for="terça">Terça feira</label>
+                <input type="checkbox">
+                <label for="quarta">Quarta feira</label>
+                <input type="checkbox">
+                <label for="quinta">Quinta feira</label>
+                <input type="checkbox">
+                <label for="sexta">Sexta feira</label>
+                <input type="checkbox">
+                <label for="Sabado">Sabado</label>
+                <input type="checkbox">
+                <label for="domingo">Domingo</label>
+                <input type="submit" value="Quanto vale">
+            </form>
+            
+            <!-- Modo avançado de calculadora -->
+            <button> <a href="./modoavançado.html"> Modo avançado</a></button>
+        </header>
+        
+        <!-- Segunda parte, carregamento após o submit -->
+        
+        <aside>
+            <section>
+                <h2>Sua hora de trabalho vale</h2>
+                <div> R$ xxx</div>
+                <p>Por suas xxx horas trabalhadas em x dias da semana</p>
+            </section>
+            <div>
+                <button> <a href="./orçamento.html"> Orçamento </a></button> 
+                <button> <a href="./quantotempo.html"> Quanto Tempo </a></button>
+            </div>
+        </aside>
+    </main>
+    </body>
+    </html>

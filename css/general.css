@@ -1,0 +1,57 @@
+:root{
+
+    font-size: 62.5%; 
+
+ /* ------ Color -------*/
+
+ --background-primary: #1E1E1E;
+ --title-color: #FFFFFF;
+ --butons-color: #DB880C;
+ --window-color: #F1F1F1;
+
+ /* ---- width ------ */
+
+ --main-w: 102.4rem;
+ --main-h: 60.4rem;
+ --h1-h: 9.3rem
+
+ --p-h: 3rem;
+
+ --input-textnumber-w: 32.2rem;
+ --input-textnumber-h: 4.6rem;
+ --input-textnumber-r: 5rem;
+
+ --input-radio-h: 2.6rem;
+ --imput-radio-r: 2.6rem;
+
+ --checkbox-h: 2rem;
+ --checkbox-w: 2rem;
+
+ --a-w: 14.6rem;
+ --a-h: 15.0rem;
+
+ /* ---- margin ---- */
+ --h1-mtop: 5.7rem;
+
+ --input-text-mtop: 0.7rem;
+}
+
+@font-face {
+    font-family: 'Bebas', cursive;
+    src: url(../asets/fonts/BebasNeue-Regular.otf) format(otf) ;
+}
+
+body{
+    background-color: var(--background-primary);
+    color: var(--title-color);
+}
+
+main{
+    width: var(--main-w);
+    height: var(--main-h);
+    background-color: red;
+}
+header h1{
+    height: var(--h1-h);
+    background-color: blue;
+}
