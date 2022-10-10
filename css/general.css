@@ -27,15 +27,13 @@
  --checkbox-h: 2rem;
  --checkbox-w: 2rem;
 
- --a-w: 1.4rem;
- --a-h: 4rem;
- --a-br: 5rem;
-
  --asidesec-w: 31.3rem;
  --asidesec-h: 32.4rem;
  --asidesec-r: 2rem;
 
-
+--asideinput-w: 14.9rem;
+--asideinput-h: 3.8rem;
+--asideinput-r: 5rem;
 
  /* ---- margin ---- */
  --h1-mtop: 5.7rem;
@@ -116,36 +114,33 @@ main aside section {
 main aside div {
     background-color: green;
     width: var(--asidesec-w);
-    height: var(--a-h);
+    height: var(--asideinput-h);
     margin: auto;
     margin-top: 20px;
     
     
 }
 main aside form input{
-    width: 148px;
-    height: 38px;
+    width: var(--asideinput-w);
+    height: var(--asideinput-h);
     display: inline-block;
-    background-color: blue;
+    color: var(--title-color);
+    border-radius: var(--asideinput-r);
+    background-color: var(--background-primary);
+    border-style: none;
+    
 }
 main aside form:nth-child(2) input{
-    width: 148px;
-    height: 38px;
-    background-color: blue;
+    width: var(--asideinput-w);
+    height: var(--asideinput-h);
+    border-radius: var(--asideinput-r);
+    transform: translate(-0%, -100%);
+    
+
     float: right;
-    transform: translate(-5%, -100%);
-
-}
-main aside div a{
-    box-sizing: border-box;
-    padding: var(--a-w) var(--a-h);
-    border-radius: var(--a-br);
-    border: 1px solid var(--window-color);
     color: var(--title-color);
-    display: inline-block;
-    margin: 0px 0px 0px 17px;
+    background-color: var(--background-primary);
+    border-style: none;
 
-    
-    
-    
 }
+
