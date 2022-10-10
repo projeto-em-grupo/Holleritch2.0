@@ -35,6 +35,8 @@
  --asidesec-h: 32.4rem;
  --asidesec-r: 2rem;
 
+
+
  /* ---- margin ---- */
  --h1-mtop: 5.7rem;
 
@@ -68,13 +70,17 @@ main header {
     width: var(--aside-2w);
     display: inline-block;
 }
-main header input[type=number]{
+main header form{
+    width: 340px;
+    margin-left: 85px;
+}
+main header form input[type=number]{
     width: var(--input-textnumber-w);
     height: var(--input-textnumber-h);
     border-radius: var(--input-textnumber-r);
     border-style: none;
 }
-main header input[type=text]{
+main header form input[type=text]{
     width: var(--input-textnumber-w);
     height: var(--input-textnumber-h);
     border-radius: var(--input-textnumber-r);
@@ -93,6 +99,8 @@ input[type=checkbox]{
     width: var(--checkbox-w);
     background-color: aqua;
 }
+
+/*  -------- ASIDE ---------- */
 main aside {
     width: var(--aside-2w);
     float: right;
@@ -113,6 +121,20 @@ main aside div {
     margin-top: 20px;
     
     
+}
+main aside form input{
+    width: 148px;
+    height: 38px;
+    display: inline-block;
+    background-color: blue;
+}
+main aside form:nth-child(2) input{
+    width: 148px;
+    height: 38px;
+    background-color: blue;
+    float: right;
+    transform: translate(-5%, -100%);
+
 }
 main aside div a{
     box-sizing: border-box;
