@@ -11,6 +11,7 @@
 
  /* ---- width ------ */
 --aside-2w: 51rem;
+--mainheader-w: 51rem;
 
  --main-w: 102.4rem;
  --main-h: 60.4rem;
@@ -65,7 +66,7 @@ main h1{
     text-align: center;
 }
 main header {
-    width: var(--aside-2w);
+    width: var(--mainheader-w);
     display: inline-block;
 }
 main header form{
@@ -88,6 +89,25 @@ main header form p {
     height: 3rem;
     background-color: green;
 }
+
+.submit1{
+    background-color: var(--butons-color);
+    width: var(--asideinput-w);
+    height: var(--asideinput-h);
+    border-radius: var(--asideinput-r);
+    border-style: none;
+}
+.submit2{
+    background-color: var(--background-primary);
+    color: var(--title-color);
+    width: var(--asideinput-w);
+    height: var(--asideinput-h);
+    border-style: none;
+    text-decoration: underline;
+}
+
+/* --------- de folhas únicas -------- */
+
 main header form input[type=radio]{
     height: var(--input-radio-h);
     width: var(--imput-radio-w);
@@ -97,6 +117,8 @@ input[type=checkbox]{
     width: var(--checkbox-w);
     background-color: aqua;
 }
+
+
 
 /*  -------- ASIDE ---------- */
 main aside {
